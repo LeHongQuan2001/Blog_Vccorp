@@ -34,7 +34,7 @@
                 <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <img src="../assets/img/layouts/logo1.jpg" alt="" style="width: 200px;">
+                            <img src="../assets/img/layouts/logo1.jpg" alt="" style="width: 170px;">
                         </span>
                     </a>
                 </div>
@@ -100,6 +100,7 @@
                             </li>
                         </ul>
                     </li>
+                </ul>
             </aside>
             <!-- / Menu -->
 
@@ -180,63 +181,76 @@
 
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
-                    <div class="container-xxl flex-grow-1 container-p-y">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="form-container">
+                    <form>
+                        <div class="container-xxl flex-grow-1 container-p-y">
+                            <div class="row justify-content-center align-items-center mb-4">
+                                <div class="col-lg-12 d-flex justify-content-between ">
                                     <h3 class="header">UPDATE POST</h3>
-                                    <form>
+                                    <div>
+                                        <a href="post.html"><button type="button" class="btn btn-outline-danger">CANCEL</button></a>
+                                        <button type="submit" class="btn btn-outline-primary" style="border: 2px solid">SAVE</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="form-container">
                                         <div class="row">
-                                            <div class="col-md-8">
+                                            <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label class="form-label" for="title">Title</label>
-                                                    <input type="text" id="title" class="form-control" placeholder="Blog 1" required>
+                                                    <input type="text" id="title" class="form-control" placeholder="Blog 1"
+                                                           required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="form-label" for="content">Content</label>
-                                                    <textarea name="editor" id="editor"></textarea>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="form-label" for="file">File</label>
-                                                    <input type="file" class="form-control" id="file">
+                                                    <label class="form-label" for="editor">Content</label>
+                                                    <textarea name="editor" id="editor" class="form-control"
+                                                              required></textarea>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-container">
+                                        <div class="row">
+                                            <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="category" class="form-label">Category</label>
-                                                    <select class="form-select" id="category" aria-label="Default select example" required>
-                                                        <option selected>--Choose category--</option>
+                                                    <select class="form-select" id="category"
+                                                            aria-label="Default select example" required>
+                                                        <option selected disabled>--Choose category--</option>
                                                         <option value="1">Blog</option>
                                                         <option value="2">Newspaper</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="language" class="form-label">Language</label>
-                                                    <select class="form-select" id="language" aria-label="Default select example" required>
-                                                        <option selected>--Choose language--</option>
+                                                    <select class="form-select" id="language"
+                                                            aria-label="Default select example" required>
+                                                        <option selected disabled>--Choose language--</option>
                                                         <option value="1">Viet Nam</option>
                                                         <option value="2">English</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
+                                                    <label class="form-label" for="file">File</label>
+                                                    <input type="file" class="form-control" id="file">
+                                                </div>
+                                                <div class="form-group">
                                                     <label for="status" class="form-label">Status:</label>
-                                                    <label class="switch" style="margin: 20px;">
+                                                    <div id="status" class="switch" style="margin: 20px;">
                                                         <input type="checkbox" id="switch1">
                                                         <label for="switch1"></label>
-                                                    </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style="margin-top: 25px; text-align-last: right;">
-                                            <button type="button" class="btn btn-danger"><a href="post.html" style="color: #fff;">CANCEL</a></button>
-                                            <button type="button" class="btn btn-primary">SAVE</button>
-                                        </div>
-                                    </form>
-                                    <hr>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
                 <!-- / Content -->
